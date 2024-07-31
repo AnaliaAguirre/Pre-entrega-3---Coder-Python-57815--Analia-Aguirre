@@ -1,0 +1,21 @@
+{% extends 'appdete/padre.html' %}
+
+{% load static %}
+
+
+{% block title %} Formulario - Agregar Clase {% endblock title%}
+
+
+{% block main %}
+    <form action="/clase_formulario/" method="POST">
+        {% csrf_token %}
+        <p>Clase: <input type="text" name="clase"></p>
+        <p>Comisión: <input type="text" name="comisión"></p>
+
+        <input type="submit" value="Enviar">
+    
+{% endblock main %}
+    
+    
+
+    
